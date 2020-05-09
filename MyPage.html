@@ -103,14 +103,15 @@
     <div class="pooja-additional-menu-content">
         <h3 class="pooja-title-small">ENGINEER</h3>
         <h2 class="pooja-title">POOJA BALAJI</h2> <img src="assets/image/Pooja.jpg" alt="">
-        <p style="text-align:left;">I, as a junior web developer, strive to create visually appealing sites that feature user-friendly design and clear navigation. I’ll spend most a significant portion of my time coding and documenting. I’ll generally be able to self-schedule my hours of working and complete work based on deadlines. I would work hard to give my best potential 
+        <p style="text-align:left;">
+            I, as a junior web developer, strive to create visually appealing sites that feature user-friendly design and clear navigation. I’ll spend most a significant portion of my time coding and documenting. I’ll generally be able to self-schedule my hours of working and complete work based on deadlines. I would work hard to give my best potential
         </p>
         <ul style="text-align:left;">
             <li>Participating in coding, testing, debugging new applications</li>
             <li> HTML views with HTML5, CSS3, javascript, and AngularJS</li>
         </ul>
-        
-        <br/>
+
+        <br />
         <h6>SKILLS AND PROFESSIONAL QUALITIES:</h6>
         <ul style="text-align:left;">
             <li><a class="fa fa-angle-right"></a>&nbsp;&nbsp;HTML5</li>
@@ -138,7 +139,7 @@
                 <p>pooja.b1925@gmail.com</p>
             </div>
             <div class="clear"></div>
-            <button type="button" id="download" class="button-color" style="cursor:pointer;"><span class="ti-download"></span> DOWNLOAD CV</button>
+            <button type="button" id="download" class="button-color" style="cursor:pointer;"><span class="ti-download"></span> DOWNLOAD RESUME</button>
         </div>
     </div>
     <script src="assets/js/jquery-3.1.1.min.js"></script>
@@ -146,12 +147,8 @@
     <script src="assets/js/functions.js"></script>
     <script src="assets/js/jquery.fileDownload.js"></script>
     <script>
-        $(document).on("click", "#download", function () {
-            $.fileDownload("assets/resume/Pooja_resume.pdf", {
-                preparingMessageHtml: "We are preparing your report, please wait...",
-                failMessageHtml: "There was a problem generating your report, please try again."
-            });
-            return false; //this is critical to stop the click event which will trigger a normal file download!
+        $("#download").click(function () {
+            window.open("assets/resume/Pooja_resume.pdf", '_blank');
         });
     </script>
 </body>
